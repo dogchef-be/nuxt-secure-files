@@ -1,6 +1,6 @@
 {
   "name": "nuxt-secure-files",
-  "version": "1.0.1-alpha",
+  "version": "1.0.2-alpha",
   "description": "Embed images and download files securely via API requests",
   "repository": "github:dogchef-be/nuxt-secure-files",
   "license": "MIT",

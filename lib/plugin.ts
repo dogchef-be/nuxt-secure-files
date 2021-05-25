@@ -1,6 +1,6 @@
 import { Plugin } from "@nuxt/types";
 
-export const downloadFile = async function download(
+export async function downloadFile(
   path: string,
   filename: string,
   mode?: "base64" | "blob" // TO-DO: Support blob
@@ -13,7 +13,7 @@ export const downloadFile = async function download(
   link.download = filename;
   link.click();
   link.remove();
-};
+}
 
 const secureFilesPlugin: Plugin = (ctx, inject): void => {
   inject("secDownload", downloadFile);
