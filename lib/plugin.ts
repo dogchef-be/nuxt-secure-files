@@ -1,13 +1,9 @@
 import { Plugin } from "@nuxt/types";
 
-enum FILE_FORMATS {
-  BASE64,
-}
-
-async function download(
-  format: FILE_FORMATS,
+export const downloadFile = async function download(
   path: string,
-  filename: string
+  filename: string,
+  mode?: "base64" | "blob" // TO-DO: Support blob
 ): Promise<void> {
   const { data } = await window.$nuxt.$axios.get(path);
 
@@ -17,16 +13,10 @@ async function download(
   link.download = filename;
   link.click();
   link.remove();
-}
-
-function base64(path: string, filename: string) {
-  return download(FILE_FORMATS.BASE64, path, filename);
-}
+};
 
 const secureFilesPlugin: Plugin = (ctx, inject): void => {
-  inject("secDownload", {
-    base64,
-  });
+  inject("secDownload", downloadFile);
 };
 
 export default secureFilesPlugin;

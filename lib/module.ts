@@ -1,10 +1,9 @@
 import path from "path";
+import { downloadFile } from "./plugin";
 
 declare module "vue/types/vue" {
   interface Vue {
-    $secDownload: {
-      base64(path: string, filename: string): void;
-    };
+    $secDownload: typeof downloadFile;
   }
 }
 

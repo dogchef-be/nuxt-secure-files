@@ -6,7 +6,8 @@ Embed images and download files securely via API requests
 
 ## Main features
 
-- Base64 files (incl. images)
+- Download Base64 files
+- Directive for embedding images (WIP)
 - TypeScript support
 
 ## Setup
@@ -38,7 +39,15 @@ export default {
 
 ## Usage
 
-...
+```ts
+{
+  methods: {
+    downloadFile() {
+        this.$secDownload('/api/file/xx', 'file_xx.pdf');
+    }
+  }
+}
+```
 
 ## License
 
