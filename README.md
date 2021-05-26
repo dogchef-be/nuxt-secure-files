@@ -39,6 +39,20 @@ export default {
 
 ## Usage
 
+1. Make sure Axios is setup, so the Authorization request header is sent. Example:
+
+```ts
+const axiosPlugin: Plugin = ({ $axios }): void => {
+  $axios.onRequest((config: AxiosRequestConfig): void => {
+    config.headers.Authorization = 'Bearer XXXXXXXXXXXXXXXX'
+  })
+}
+
+export default axiosPlugin
+```
+
+2. Use `$secDownload`:
+
 ```ts
 {
   methods: {
