@@ -1,8 +1,21 @@
-# nuxt-secure-files
+<h1 align="center">
+  nuxt-secure-files
+</h1>
+<p align="center">
+  Embed images and download files securely via API requests<br />
+</p>
 
-<a href="https://www.npmjs.com/package/nuxt-secure-files"><img src="https://img.shields.io/npm/v/nuxt-secure-files?style=flat-square"></a> <a href="https://www.npmjs.com/package/nuxt-secure-files"><img src="https://img.shields.io/npm/dt/nuxt-secure-files?style=flat-square"></a> <a href="#"><img src="https://img.shields.io/github/license/dogchef-be/nuxt-secure-files?style=flat-square"></a>
+<p align="center">
+  <a href="https://www.npmjs.com/package/nuxt-secure-files"><img src="https://img.shields.io/npm/v/nuxt-secure-files?style=flat-square"></a> <a href="https://www.npmjs.com/package/nuxt-secure-files"><img src="https://img.shields.io/npm/dt/nuxt-secure-files?style=flat-square"></a> <a href="#"><img src="https://img.shields.io/github/license/dogchef-be/nuxt-secure-files?style=flat-square"></a>
+</p>
+<br />
 
-Embed images and download files securely via API requests
+
+## Table of contents
+- [Main features](#main-features)
+- [Setup](#setup)
+- [Usage](#usage)
+- [License](#license)
 
 ## Main features
 
